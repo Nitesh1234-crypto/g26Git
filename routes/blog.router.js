@@ -5,5 +5,10 @@ router.get("/getblogs",(req,res)=>{
         data:[{title:"myblog"},{title:"second blog"}]
     })
 })
-
+router.get("/getoneBlog",(req,res)=>{
+    res.json({
+        success:true,
+        data:{title:"single blog"}
+    })
+})
 module.exports=router;
