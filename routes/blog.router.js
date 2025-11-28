@@ -5,5 +5,11 @@ router.get("/getblogs",(req,res)=>{
         data:[{title:"myblog"},{title:"second blog"}]
     })
 })
+router.get("/getoneblogs",(req,res)=>{
+        res.send({
+            success:true,
+            data:{title:"mera blog"}
+        })
+})
 
 module.exports=router;
