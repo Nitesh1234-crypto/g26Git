@@ -5,5 +5,10 @@ router.get("/getusers",(req,res)=>{
         data:[{name:"Nitesh"},{name:"veer"}]
     })
 })
-
+router.get("/getoneuser",(req,res)=>{
+    res.json({
+        success:true,
+        data:{name :"nitesh"}
+    })
+})
 module.exports= router;
